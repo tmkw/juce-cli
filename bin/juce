@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "juce/cli"
+
+Juce::CLI.run(ARGV)
+
