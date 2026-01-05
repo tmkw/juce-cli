@@ -4,6 +4,11 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## 0.1.2 — 2026-01-05
+
+### Added
+- provides the version message when no arguments are passed.
+
 ## 0.1.1 — 2026-01-05
 
 ### Changed
