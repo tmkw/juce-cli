@@ -1,6 +1,26 @@
 #!/usr/bin/env ruby
 
+def show_message
+  # juce-cli version
+  cli_version = File.read(File.expand_path("../VERSION", __dir__)).strip
+  # juce library version
+  juce_version = File.read(File.expand_path("../lib/juce/JUCE_VERSION", __dir__)).strip
+
+  message =<<~EOS
+    juce-cli
+    version: #{cli_version}
+    library version: #{juce_version}
+  EOS
+
+  puts message
+end
+
 require "juce/cli"
 
-Juce::CLI.run(ARGV)
+if ARGV.empty?
+  show_message
+  exit 0
+else
+  Juce::CLI.run(ARGV)
+end
 
