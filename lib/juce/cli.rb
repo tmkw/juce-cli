@@ -3,6 +3,7 @@ require "shellwords"
 module Juce
   class CLI
     def self.run(argv)
+      version = File.read([__dir__, 'JUCE_VERSION'].join('/')).strip
       # Normalize CLASSPATH (Windows ; → :)
       classpath = ENV["CLASSPATH"].to_s.gsub(";", ":")
       class_paths = classpath.split(":").reject(&:empty?)
@@ -11,7 +12,7 @@ module Juce
       paths_edn = class_paths.map { |cp| %("#{cp}") }.join(" ")
 
       deps_edn = %(
-        {:deps {io.github.tmkw/juce {:mvn/version "0.2.2"}}
+        {:deps {io.github.tmkw/juce {:mvn/version "#{version}"}}
          :paths [#{paths_edn}]}
       ).strip
 
