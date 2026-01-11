@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = "juce-cli"
   s.version     = File.read([__dir__, 'VERSION'].join('/')).strip
-  s.summary     = "Command-line interface for the juce template engine"
-  s.description = "A Ruby-based CLI wrapper for the juce Clojure template engine."
+  s.summary     = "Command-line interface for the juce HTML generator"
+  s.description = "A Ruby-based CLI wrapper for the juce HTML generator.It is intended for static site or page generation, and is not suitable as a dynamic web page renderer."
   s.authors     = ["Takanobu Maekawa"]
   s.files       = Dir['lib/**/*.rb', 'lib/juce/JUCE_VERSION', 'VERSION']
   s.homepage    = "https://github.com/tmkw/juce-cli"
