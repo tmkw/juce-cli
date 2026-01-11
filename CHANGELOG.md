@@ -4,11 +4,18 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## 0.1.4 — 2026-01-11
+
+### Changed
+- Updated dependency to juce 0.2.4.
+
 ## 0.1.3 — 2026-01-07
 
 ### Changed
 - Updated dependency to juce 0.2.3.
 
+### Changed
+- Updated dependency to juce 0.2.3.
 
 ## 0.1.2 — 2026-01-05
 
