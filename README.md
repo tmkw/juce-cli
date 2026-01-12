@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/juce-cli.svg)](https://badge.fury.io/rb/juce-cli)
 
+**This is an experimental project. Do not use for production level.**
+
 **juce-cli** is a Ruby-based command-line interface for **[juce](https://github.com/tmkw/juce)**,  
 a Clojure DSL designed for generating HTML using Clojure (S-expressions) syntax.
 It is intended for static site or page generation, and is not suitable as a dynamic web page renderer.
